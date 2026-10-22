@@ -45,6 +45,7 @@ def gerar(c):
          f'<meta property="og:url" content="{SITE}{c["pasta"]}/">'),
         ('<img src="retrato.jpg"', '<img src="foto.jpg"'),
         ('src="claro-revenda.png"', 'src="../claro-revenda.png"'),
+        ('src="logos/', 'src="../logos/'),
         ("/evelyn-consultoria/#", f'/evelyn-consultoria/{c["pasta"]}/#'),
     ]
     for antes, depois in trocas:
