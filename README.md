@@ -15,3 +15,10 @@ No ar em: https://evelynhartmann14.github.io/evelyn-consultoria/
 - **Preços:** procure o plano no bloco `CATÁLOGO 1: PORTABILIDADE` ou `CATÁLOGO 2`. Mude o valor no plano e também no `data-plano` do botão (é a mensagem enviada no WhatsApp).
 - **Cores:** bloco "CORES" no início do arquivo (vermelho Claro).
 - **Selo Claro:** `claro-revenda.png` (branco, fundo transparente), recortado da arte oficial de Revenda Autorizada.
+
+## Sites de outros consultores
+Cada consultor tem uma pasta com o mesmo catálogo (ex.: `everton/` → https://evelynhartmann14.github.io/evelyn-consultoria/everton/).
+Essas páginas são **geradas** a partir do `index.html` da Evelyn — não edite `everton/index.html` direto.
+
+- Depois de mudar preços ou textos no `index.html`, rode `python3 gerar_consultores.py` para atualizar todos os consultores.
+- Para adicionar um consultor: inclua os dados na lista `CONSULTORES` do `gerar_consultores.py`, coloque a foto em `<pasta>/foto.jpg` e rode o script.
