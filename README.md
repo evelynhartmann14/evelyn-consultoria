@@ -13,4 +13,5 @@ No ar em: https://evelynhartmann14.github.io/evelyn-consultoria/
 - Todo o site está no `index.html`. Foto do topo: `retrato.jpg`. Imagem da prévia do link no WhatsApp: `capa.jpg`.
 - **WhatsApp:** no final do `index.html`, altere `var WHATSAPP = "..."` (55 + DDD + número, só números).
 - **Preços:** procure o plano no bloco `CATÁLOGO 1: PORTABILIDADE` ou `CATÁLOGO 2`. Mude o valor no plano e também no `data-plano` do botão (é a mensagem enviada no WhatsApp).
-- **Cores e fontes:** bloco "IDENTIDADE VISUAL" no início do arquivo (tiradas da arte "Quem sou eu").
+- **Cores e fontes:** bloco "IDENTIDADE VISUAL" no início do arquivo (bordô Claro + arte "Quem sou eu").
+- **Selo Claro:** `claro-revenda.png` (branco, fundo transparente), recortado da arte oficial de Revenda Autorizada.

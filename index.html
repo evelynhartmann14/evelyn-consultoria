@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Evelyn Hartmann | Consultora Empresarial · Revenda Autorizada Claro</title>
   <meta name="description" content="Evelyn Hartmann, consultora empresarial e revenda autorizada Claro: portabilidade, transferência de CPF para CNPJ e linha nova. Peça a análise gratuita da sua conta.">
-  <meta name="theme-color" content="#858489">
+  <meta name="theme-color" content="#7D1625">
 
   <!-- Prévia do link no WhatsApp -->
   <meta property="og:type" content="website">
@@ -24,7 +24,8 @@
   <style>
     /* =========================================================
        IDENTIDADE VISUAL — altere aqui para mudar o site inteiro
-       (cores tiradas da arte "Quem sou eu")
+       Bordô (Claro + Evelyn) com o cinza, o creme e as setinhas
+       da arte "Quem sou eu"
        ========================================================= */
     :root {
       --cinza:        #858489;  /* cinza do topo da arte */
@@ -34,7 +35,11 @@
       --creme-claro:  #FBF8F3;  /* cartões */
       --creme-texto:  #F1EBE0;  /* textos sobre fundo escuro */
       --bege:         #E6CFAE;  /* setinhas e detalhes */
-      --bege-escuro:  #8C7457;  /* etiquetas */
+      --bordo:        #7D1625;  /* cor principal: botões, preços, detalhes */
+      --bordo-escuro: #4B0D17;
+      --bordo-vivo:   #A3202E;  /* bordô puxado pro vermelho Claro */
+      --vermelho-claro: #DA291C;  /* vermelho da Claro (selo) */
+      --rosado:       #F5E3E3;
       --texto:        #2E2D30;
       --suave:        #6F6A64;
       --linha:        #E2D8C9;
@@ -66,7 +71,7 @@
       font-weight: 600;
       letter-spacing: .16em;
       text-transform: uppercase;
-      color: var(--bege-escuro);
+      color: var(--bordo);
     }
     .titulo-script {
       margin: 0;
@@ -91,13 +96,13 @@
 
     /* ---------- Topo ---------- */
     .hero {
-      background: linear-gradient(180deg, var(--cinza) 0%, var(--cinza-medio) 58%, var(--grafite) 100%);
+      background: linear-gradient(170deg, var(--bordo-vivo) 0%, var(--bordo) 45%, var(--bordo-escuro) 100%);
       color: var(--creme-texto);
       text-align: center;
       padding: 34px 16px 92px;
       overflow: hidden;
     }
-    .hero .etiqueta { color: var(--creme-texto); opacity: .85; }
+    .hero__claro { display: block; width: 170px; height: auto; margin: 0 auto; }
     .hero__nome { margin-top: 10px; font-size: clamp(46px, 13vw, 76px); color: var(--creme-texto); }
     .hero .caixa { margin-top: 12px; }
 
@@ -159,9 +164,9 @@
       width: 100%;
       min-height: 52px;
       padding: 12px 18px;
-      border: 1px solid var(--grafite);
+      border: 1px solid var(--bordo);
       border-radius: 2px;
-      background: var(--grafite);
+      background: var(--bordo);
       color: var(--creme-texto);
       font-family: var(--fonte-texto);
       font-weight: 600;
@@ -174,12 +179,12 @@
       -webkit-tap-highlight-color: transparent;
       transition: background-color .2s ease, color .2s ease;
     }
-    .botao:hover { background: #000; }
-    .botao--claro { background: transparent; color: var(--grafite); }
-    .botao--claro:hover { background: var(--grafite); color: var(--creme-texto); }
+    .botao:hover { background: var(--bordo-escuro); }
+    .botao--claro { background: transparent; color: var(--bordo); }
+    .botao--claro:hover { background: var(--bordo); color: var(--creme-texto); }
     .botao svg { width: 19px; height: 19px; flex: none; }
     .botao:focus-visible, .escolha:focus-visible, .opcao:focus-visible, .voltar:focus-visible {
-      outline: 2px solid var(--bege-escuro);
+      outline: 2px solid var(--bordo);
       outline-offset: 3px;
     }
 
@@ -206,6 +211,20 @@
     .compromissos li { padding-left: 22px; position: relative; font-size: 14.5px; }
     .compromissos li::before { content: "✓"; position: absolute; left: 0; color: var(--bege); font-weight: 700; }
 
+    /* ---------- Benefícios Claro ---------- */
+    .beneficios { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0 0; padding: 0; list-style: none; }
+    .beneficios li {
+      padding: 14px;
+      background: var(--creme-claro);
+      border: 1px solid var(--linha);
+      border-top: 3px solid var(--bordo);
+      font-size: 12.5px;
+      line-height: 1.4;
+      color: var(--suave);
+    }
+    .beneficios strong { display: block; margin-bottom: 2px; font-size: 14px; color: var(--grafite); }
+    .beneficios__obs { margin: 10px 0 0; font-size: 12px; color: var(--suave); }
+
     /* ---------- Escolha do caminho ---------- */
     .bloco { margin-top: 48px; }
     .bloco__titulo { margin-top: 8px; font-size: 38px; color: var(--grafite); }
@@ -223,12 +242,12 @@
       -webkit-tap-highlight-color: transparent;
       transition: border-color .2s ease;
     }
-    .escolha:hover { border-color: var(--bege-escuro); }
-    .escolha[aria-current="true"] { border-color: var(--grafite); box-shadow: inset 4px 0 0 var(--grafite); }
-    .escolha__num { font-family: var(--fonte-titulo); font-style: italic; font-size: 34px; line-height: 1; color: var(--bege-escuro); }
+    .escolha:hover { border-color: var(--bordo); }
+    .escolha[aria-current="true"] { border-color: var(--bordo); box-shadow: inset 4px 0 0 var(--bordo); }
+    .escolha__num { font-family: var(--fonte-titulo); font-style: italic; font-size: 34px; line-height: 1; color: var(--bordo); }
     .escolha strong { display: block; font-size: 15.5px; font-weight: 600; line-height: 1.3; color: var(--grafite); }
     .escolha small { display: block; margin-top: 3px; color: var(--suave); font-size: 13px; line-height: 1.4; }
-    .escolha__seta { font-size: 22px; color: var(--bege-escuro); }
+    .escolha__seta { font-size: 22px; color: var(--bordo); }
 
     /* ---------- Catálogos ---------- */
     .catalogo { margin-top: 40px; scroll-margin-top: 12px; }
@@ -249,7 +268,7 @@
       font-style: italic;
       font-size: 24px;
       line-height: 1;
-      color: var(--bege-escuro);
+      color: var(--bordo);
     }
 
     .opcoes { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 0 20px; }
@@ -265,7 +284,7 @@
       line-height: 1.3;
       cursor: pointer;
     }
-    .opcao[aria-pressed="true"] { background: var(--grafite); border-color: var(--grafite); color: var(--creme-texto); }
+    .opcao[aria-pressed="true"] { background: var(--bordo); border-color: var(--bordo); color: var(--creme-texto); }
 
     .planos { display: grid; gap: 12px; }
     .plano {
@@ -280,7 +299,7 @@
     .plano__gb { margin: 0; font-family: var(--fonte-titulo); font-style: italic; font-size: 38px; line-height: 1; color: var(--grafite); }
     .plano__det { margin: 4px 0 0; grid-column: 1; font-size: 13px; color: var(--suave); }
     .plano__preco { grid-column: 2; grid-row: 1 / span 2; margin: 0; text-align: right; line-height: 1.05; white-space: nowrap; }
-    .plano__preco b { display: block; font-size: 24px; color: var(--grafite); }
+    .plano__preco b { display: block; font-size: 24px; color: var(--bordo); }
     .plano__preco small { font-size: 11px; color: var(--suave); }
     .plano__extra { grid-column: 1 / -1; margin: 12px 0 0; padding-top: 12px; border-top: 1px solid var(--linha); font-size: 12.5px; color: var(--suave); }
     .plano .botao { grid-column: 1 / -1; margin-top: 14px; min-height: 46px; font-size: 13px; }
@@ -288,21 +307,21 @@
       display: inline-block;
       margin-bottom: 6px;
       padding: 2px 8px;
-      background: #EFE2CE;
-      color: var(--bege-escuro);
+      background: var(--rosado);
+      color: var(--bordo);
       font-size: 10.5px;
       font-weight: 700;
       letter-spacing: .1em;
       text-transform: uppercase;
     }
 
-    .inclusos { margin: 16px 0 0; padding: 16px; border-left: 3px solid var(--bege); background: var(--creme-claro); font-size: 13.5px; }
+    .inclusos { margin: 16px 0 0; padding: 16px; border-left: 3px solid var(--bordo); background: var(--creme-claro); font-size: 13.5px; }
     .voltar {
       display: block;
       margin: 20px auto 0;
       background: none;
       border: 0;
-      color: var(--bege-escuro);
+      color: var(--bordo);
       font-family: var(--fonte-texto);
       font-weight: 600;
       font-size: 13px;
@@ -318,6 +337,8 @@
     .final__titulo { margin: 8px 0 18px; font-size: 34px; color: var(--grafite); }
     .rodape { margin-top: 26px; font-size: 12px; color: var(--suave); }
     .rodape p { margin: 4px 0; }
+    .rodape__claro { display: inline-block; margin-bottom: 14px; padding: 10px 16px; background: var(--vermelho-claro); border-radius: 4px; }
+    .rodape__claro img { display: block; width: 140px; height: auto; }
 
     /* =========================================================
        COMPUTADOR / TABLET — notas ao lado da foto
@@ -361,7 +382,7 @@
 
   <!-- ===== TOPO ===== -->
   <header class="hero">
-    <p class="etiqueta">Revenda Autorizada Claro</p>
+    <img class="hero__claro" src="claro-revenda.png" alt="Claro | Revenda Autorizada" width="1002" height="208">
     <h1 class="titulo-script hero__nome">Evelyn Hartmann</h1>
     <span class="caixa">Consultora <b>Empresarial</b></span>
 
@@ -420,6 +441,21 @@
     </section>
 
     <div class="conteudo">
+
+      <!-- ===== BENEFÍCIOS CLARO ===== -->
+      <section class="bloco">
+        <p class="etiqueta">Vantagens Claro</p>
+        <h2 class="titulo-script bloco__titulo">Muito mais que internet</h2>
+        <ul class="beneficios">
+          <li><strong>WhatsApp ilimitado</strong>Sem descontar da sua internet</li>
+          <li><strong>Waze ilimitado</strong>Sem descontar da sua internet</li>
+          <li><strong>McAfee</strong>Segurança para o seu celular</li>
+          <li><strong>Skeelo</strong>Livros digitais</li>
+          <li><strong>Claro Passaporte</strong>5GB para usar nas Américas</li>
+          <li><strong>Apps Claro</strong>Claro banca, recados, monitor e Gestor Online</li>
+        </ul>
+        <p class="beneficios__obs">Os benefícios variam conforme o plano. Veja o que vem em cada um abaixo.</p>
+      </section>
 
       <!-- =====================================================
            ESCOLHA DO CAMINHO
@@ -589,6 +625,7 @@
         <h2 class="titulo-script final__titulo">Vamos encontrar o seu plano?</h2>
         <a class="botao" data-msg="Olá, Evelyn! Quero ajuda para escolher o melhor plano Claro." href="#" target="_blank" rel="noopener">Falar com a Evelyn</a>
         <div class="rodape">
+          <span class="rodape__claro"><img src="claro-revenda.png" alt="Claro | Revenda Autorizada" width="1002" height="208"></span>
           <p><b>Evelyn Hartmann</b> · Consultora Empresarial · Revenda Autorizada Claro</p>
           <p>Preços e condições sujeitos a alteração, análise de crédito e disponibilidade.</p>
         </div>
