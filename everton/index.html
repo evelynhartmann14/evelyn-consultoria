@@ -266,6 +266,7 @@
     .plano__logos img { display: block; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--linha); }
     .plano__depois { grid-column: 1 / -1; margin: 6px 0 0; font-size: 13px; color: var(--texto); }
     .inclusos { margin: 14px 0 0; padding: 14px; border-radius: 12px; background: var(--branco); border: 1px solid var(--linha); font-size: 13.5px; }
+    .inclusos a { color: var(--vermelho); font-weight: 700; }
     .voltar {
       display: block;
       margin: 16px auto 0;
@@ -279,6 +280,29 @@
       text-underline-offset: 3px;
       cursor: pointer;
     }
+
+    /* ---------- Combo internet + Claro Pós ---------- */
+    .combo-bloco {
+      padding: 24px 18px;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #1F1F1F 0%, #4A0C07 100%);
+      color: var(--branco);
+    }
+    .combo-bloco .secao__rotulo { color: #FF8A3D; }
+    .combo-bloco h2 { color: var(--branco); }
+    .combo-bloco h2 b { color: #FF8A3D; }
+    .combo-bloco .secao__intro { color: rgba(255, 255, 255, .85); }
+    .combos { display: grid; gap: 10px; margin-top: 18px; }
+    .combo { padding: 16px; border-radius: 14px; background: var(--branco); color: var(--texto); }
+    .combo__itens { margin: 0; font-size: 17px; font-weight: 800; }
+    .combo__itens span { color: var(--vermelho); }
+    .combo__gb { margin: 4px 0 0; font-size: 13px; color: var(--suave); }
+    .combo__gb b { color: #E8590C; }
+    .combo__preco { margin: 10px 0 0; font-size: 13px; color: var(--suave); }
+    .combo__preco b { font-size: 24px; font-weight: 800; color: var(--vermelho); }
+    .combo__depois { margin: 2px 0 0; font-size: 13px; }
+    .combo .botao { margin-top: 12px; min-height: 46px; font-size: 14.5px; }
+    .combo-bloco__obs { margin: 14px 0 0; font-size: 12px; color: rgba(255, 255, 255, .75); }
 
     /* ---------- Análise gratuita ---------- */
     .analise {
@@ -565,6 +589,7 @@
         </div>
 
         <p class="inclusos"><strong>Em todos os planos:</strong> WhatsApp e Waze ilimitados, sem descontar da sua internet. <strong>Viaja a negócios?</strong> Os planos de 70GB, 100GB e 150GB já incluem internet nas Américas sem custo extra.</p>
+        <p class="inclusos"><strong>🔥 Junto com a internet Claro fibra, ganhe +50GB de Mega Bônus.</strong> <a href="#combo">Ver combos</a></p>
         <button class="voltar" type="button" data-voltar>Ver outras opções</button>
       </section>
 
@@ -622,7 +647,43 @@
         </div>
 
         <p class="inclusos"><strong>Em todos os planos:</strong> instalação em até 24 horas, suporte técnico em até 4 horas, central exclusiva Claro empresas (10621) e equipamento sem custo. <strong>Sem taxa de adesão e instalação</strong> com fidelidade de 24 meses. Disponibilidade e valores podem variar conforme o endereço.</p>
+        <p class="inclusos"><strong>🔥 Junto com Claro Pós, ganhe +50GB de Mega Bônus.</strong> <a href="#combo">Ver combos</a></p>
         <button class="voltar" type="button" data-voltar>Ver outras opções</button>
+      </section>
+
+      <!-- =====================================================
+           COMBO INTERNET + CLARO PÓS (+50GB MEGA BÔNUS)
+           Oferta Pré-Black Friday do Book Claro empresas (out/2026),
+           valores no boleto, grupos Grandes Mercados.
+           ===================================================== -->
+      <section class="secao combo-bloco" id="combo">
+        <p class="secao__rotulo">Oferta Pré-Black Friday</p>
+        <h2>Internet + Claro Pós: ganhe <b>+50GB</b> de Mega Bônus</h2>
+        <p class="secao__intro">Quem contrata Claro fibra e Claro Pós juntos ganha 50GB a mais para compartilhar entre as linhas da empresa pelo Gestor Online.</p>
+
+        <div class="combos">
+          <article class="combo">
+            <p class="combo__itens">600 Mega <span>+</span> Claro Pós 62GB</p>
+            <p class="combo__gb">10GB + 2GB de bônus + <b>50GB de Mega Bônus</b></p>
+            <p class="combo__preco"><b>R$ 99,89</b>/mês nos 3 primeiros meses</p>
+            <p class="combo__depois">Depois, R$ 129,89/mês</p>
+            <a class="botao botao--whats" data-combo="600 Mega + Claro Pós 62GB – R$ 99,89 nos 3 primeiros meses" href="#"><svg aria-hidden="true"><use href="#i-whats"/></svg>Quero este combo</a>
+          </article>
+          <article class="combo">
+            <p class="combo__itens">800 Mega <span>+</span> Claro Pós 62GB</p>
+            <p class="combo__gb">Wi-Fi 6 · 10GB + 2GB de bônus + <b>50GB de Mega Bônus</b></p>
+            <p class="combo__preco"><b>R$ 149,89</b>/mês</p>
+            <a class="botao botao--whats" data-combo="800 Mega + Claro Pós 62GB – R$ 149,89" href="#"><svg aria-hidden="true"><use href="#i-whats"/></svg>Quero este combo</a>
+          </article>
+          <article class="combo">
+            <p class="combo__itens">800 Mega <span>+</span> Claro Pós 90GB</p>
+            <p class="combo__gb">Wi-Fi 6 · 25GB + 15GB de bônus + <b>50GB de Mega Bônus</b></p>
+            <p class="combo__preco"><b>R$ 164,89</b>/mês</p>
+            <a class="botao botao--whats" data-combo="800 Mega + Claro Pós 90GB – R$ 164,89" href="#"><svg aria-hidden="true"><use href="#i-whats"/></svg>Quero este combo</a>
+          </article>
+        </div>
+
+        <p class="combo-bloco__obs">Valores da internet + 1 linha Claro Pós, no boleto (R$ 5 de desconto no débito automático + fatura digital). Vale quando a internet ou o Claro Pós é uma contratação nova, inclusive na transferência de CPF para CNPJ. Disponibilidade e valores podem variar conforme o endereço.</p>
       </section>
 
       <!-- ===== ANÁLISE GRATUITA ===== -->
@@ -736,6 +797,11 @@
       document.querySelectorAll("#catalogo-portabilidade [data-plano]").forEach(function (a) {
         a.href = linkWhats("Olá, Everton! Quero fazer portabilidade para o plano " + a.dataset.plano + ".");
       });
+      document.querySelectorAll("[data-combo]").forEach(function (a) {
+        a.href = linkWhats("Olá, Everton! Quero o combo internet " + a.dataset.combo + ". O CEP da empresa é: ");
+        a.target = "_blank";
+        a.rel = "noopener";
+      });
       document.querySelectorAll("#catalogo-internet [data-plano]").forEach(function (a) {
         a.href = linkWhats("Olá, Everton! Quero a internet Wi-Fi Claro fibra, plano " + a.dataset.plano + ". O CEP da empresa é: ");
       });
@@ -774,6 +840,9 @@
       var caminho = (hash === "portabilidade" || hash === "internet") ? hash
         : (hash === "transferencia" || hash === "linha-nova") ? "empresa"
         : "";
+
+      // Links para outras partes da página (#combo, #escolha) não fecham o catálogo aberto
+      if (!caminho && hash) return;
 
       if (caminho === "empresa") escolherOpcao(hash);
 
