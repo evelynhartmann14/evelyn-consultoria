@@ -1,8 +1,16 @@
-# Evelyn Hartmann — Consultora Empresarial
+# Evelyn Hartmann — Revenda Autorizada Claro
 
-Página de links e vitrine de planos do Instagram [@evelyn.hartmannbr](https://www.instagram.com/evelyn.hartmannbr): telefonia (Claro, Vivo, TIM), internet (Nio Fibra) e cursos Wizard.
+Catálogo de planos Claro para enviar aos clientes pelo WhatsApp.
+No ar em: https://evelynhartmann14.github.io/evelyn-consultoria/
 
-- Todo o site está no arquivo `index.html` (a foto já vem embutida nele).
-- **WhatsApp:** no final do arquivo, altere `var WHATSAPP = "..."` (55 + DDD + número, só números).
-- **Preços:** cada operadora tem um bloco comentado (ex.: `===== CLARO =====`). Mude o valor no plano e também no `data-plano` do botão "Quero este", que é a mensagem enviada no WhatsApp.
+## Links diretos para disparo
+- Página inicial (análise gratuita + escolha): https://evelynhartmann14.github.io/evelyn-consultoria/
+- Portabilidade: https://evelynhartmann14.github.io/evelyn-consultoria/#portabilidade
+- Transferência de CPF para CNPJ: https://evelynhartmann14.github.io/evelyn-consultoria/#transferencia
+- Linha nova (CNPJ): https://evelynhartmann14.github.io/evelyn-consultoria/#linha-nova
+
+## Como alterar
+- Todo o site está no `index.html`. Foto: `foto.jpg`. Imagem da prévia do link no WhatsApp: `capa.jpg`.
+- **WhatsApp:** no final do `index.html`, altere `var WHATSAPP = "..."` (55 + DDD + número, só números).
+- **Preços:** procure o plano no bloco `CATÁLOGO 1: PORTABILIDADE` ou `CATÁLOGO 2`. Mude o valor no plano e também no `data-plano` do botão (é a mensagem enviada no WhatsApp).
 - **Cores:** bloco "CORES" no início do arquivo.
