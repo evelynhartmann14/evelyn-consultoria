@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Planos Claro para você e sua empresa | Evelyn Hartmann · Revenda Autorizada Claro</title>
-  <meta name="description" content="Portabilidade, transferência de CPF para CNPJ e linha nova Claro, a partir de R$ 29,99 por linha. Análise gratuita da sua conta com Evelyn Hartmann, Revenda Autorizada Claro.">
+  <meta name="description" content="Portabilidade Claro a partir de R$ 29,99 e planos para CNPJ (transferência de CPF para CNPJ ou linha nova) a partir de R$ 39,99 por linha. Análise gratuita da sua conta com Evelyn Hartmann, Revenda Autorizada Claro.">
   <meta name="theme-color" content="#DA291C">
 
   <!-- Prévia do link no WhatsApp -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://evelynhartmann14.github.io/evelyn-consultoria/">
   <meta property="og:title" content="Planos Claro para você e sua empresa | Análise gratuita da sua conta">
-  <meta property="og:description" content="Portabilidade, transferência de CPF para CNPJ e linha nova, a partir de R$ 29,99 por linha. Revenda Autorizada Claro.">
+  <meta property="og:description" content="Portabilidade a partir de R$ 29,99. Transferência de CPF para CNPJ ou linha nova a partir de R$ 39,99. Revenda Autorizada Claro.">
   <meta property="og:image" content="https://evelynhartmann14.github.io/evelyn-consultoria/capa.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -96,15 +96,17 @@
     }
     .destaque h1 { font-size: clamp(28px, 7.6vw, 40px); font-weight: 800; }
     .destaque__sub { margin: 12px 0 0; font-size: 16px; opacity: .95; }
-    .destaque__preco {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 8px 14px;
+    .destaque__precos { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .destaque__precos li {
+      padding: 10px 12px;
       border-radius: 10px;
       background: rgba(255, 255, 255, .14);
-      font-size: 14px;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.3;
     }
-    .destaque__preco b { font-size: 22px; font-weight: 800; }
+    .destaque__precos span { display: block; margin-top: 4px; font-weight: 400; font-size: 12px; }
+    .destaque__precos b { display: block; font-size: 22px; font-weight: 800; }
     .destaque__acoes { display: grid; gap: 10px; margin-top: 22px; }
     .garantias { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 8px; font-size: 14px; font-weight: 500; }
     .garantias li { display: flex; gap: 10px; align-items: center; }
@@ -359,7 +361,10 @@
       <div class="conteudo">
         <h1>Planos Claro para você e sua empresa</h1>
         <p class="destaque__sub">Portabilidade, transferência de CPF para CNPJ e linha nova, com atendimento direto pelo WhatsApp.</p>
-        <p class="destaque__preco">A partir de <b>R$ 29,99</b>/mês por linha</p>
+        <ul class="destaque__precos">
+          <li>Portabilidade<span>a partir de <b>R$ 29,99</b>/mês por linha</span></li>
+          <li>CPF para CNPJ ou linha nova<span>a partir de <b>R$ 39,99</b>/mês por linha</span></li>
+        </ul>
 
         <div class="destaque__acoes">
           <a class="botao botao--branco" data-msg="Olá, Evelyn! Quero a análise gratuita da minha conta. Vou te mandar a foto da minha fatura." href="#" target="_blank" rel="noopener">
